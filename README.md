@@ -1,6 +1,7 @@
 
+<!-- uncomment this to upload image on profile
 ![IMG-20230430-WA0003](https://github.com/dp3903/dp3903/assets/122767649/8d5c5d48-708f-4e39-808f-32d8bf670c3a)
-
+-->
 ### Hi there 👋
 
 <!--
