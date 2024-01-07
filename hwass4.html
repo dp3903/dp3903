@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+        <style>
+          html{
+        scroll-behavior: smooth;
+      }
+            body{
+                background-image: url(./419726.jpg);
+                background-repeat: no-repeat;
+                text-align: center;
+            }
+            
+            .header{
+                text-align: center;
+                font-family: 'Dancing Script',sans-serif;
+                font-size:500% ;
+            }
+            .location{
+                
+                background-color: rgba(255, 255, 255, 0.4);
+                
+                backdrop-filter: blur(20px);
+                padding: 20px;
+                margin: 20px;
+                border-radius: 20px;
+                height: 30vh;
+                min-height: 200px;
+                box-shadow: 4px 4px 10px 10px rgba(5,5,5,0.2);
+            }
+            .buttoncords{
+                height: 30px;
+                width: 60px;
+                border-radius: 4px;
+                border: hidden;
+                background-color: white;
+                box-shadow: 3px 3px 6px black;
+                transition: all 0.5s;
+            }
+            .buttoncords:hover{
+                transform: scale(1.2);
+            }
+            .button{
+                background-color: transparent;
+                display: none;
+                transition: all 0.5s;
+                border-radius: 6px; 
+                text-shadow: 2px 2px 10px #11ffee;
+                box-shadow: 2px 2px 10px #11ffee;
+                height: 40px; 
+                font-family: 'Times New Roman', Times, serif; 
+                border-width: 0px; 
+                width:100%; 
+                margin: 3px;
+            }
+            #puzzle{
+                background-color: #909090;
+            }
+
+            .button:hover{
+                background-color: #198765;
+                transform: scale(1.2);
+                
+            }
+            #demo{
+                padding: 20px;
+                opacity: 0.6;
+            }
+            .jigsaw{
+                background-color: aliceblue;
+                
+                padding: 20px;
+                margin: 20px;
+                border-radius: 20px;
+                height: fit-content;
+                display: flex;
+                
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: space-around;
+                min-height: 200px;
+                box-shadow: 2px 2px 8px grey;
+            }
+            .jigsaw table{
+                border-spacing: 0;
+                margin-right: 40px;
+                margin-left: 40px;
+                padding: 10px;
+            }
+            .abcd{
+                height: 100px;
+                min-height: 100px;
+                width: 100px;
+                min-width: 100px;
+                border: solid;
+                
+            }
+            .images{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 20%;
+                padding: 10px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .carousal{
+                background-color: aliceblue;
+                
+                padding: 20px;
+                margin: 20px;
+                border-radius: 20px;
+                /* height: 600px; */
+                
+                min-height: 200px;
+                box-shadow: 2px 2px 8px grey;
+            }
+            .carousal *{box-sizing: border-box;font-family: Verdana, sans-serif; margin:0}
+            .mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: #717171;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.caromages{
+    
+    height: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev{
+    left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  left: 0%;
+  
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 800px) {
+  
+  .caromages{height: auto; width: 100%;}
+  .slideshow-container{align-items: center;}
+}
+#myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+        </style>
+    </head>
+
+    <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
+        <div id="menubar" onmouseenter="expand()" onmouseleave="contract()" style="transition: all 1s;backdrop-filter: blur(5px); position: fixed;z-index: 1; left: 0; box-sizing: border-box; width: 20px;height: 50vh; padding: 6px; padding-top: 40px; background-color: transparent; border: solid; border-color: black; border-left: none; border-radius: 6px; box-shadow: 2px 2px 6px black; ">
+       
+            <button class="button" id="home" onclick="location.href='intro.html';" ></button>
+            <button class="button" id="feedback" onclick="location.href='index2.1.html';"></button>
+            <button class="button" id="hobbies" onclick="location.href='hobbies.html';" ></button>
+            <button class="button" id="puzzle" onclick="location.href='hwass4.html';" ></button>
+        </div>
+
+
+        <h1 class="header" style="font-weight: bold!;">Puzzles and Projects Page</h1>
+    <div class="location">
+        <h2>Click the button to get your coordinates.</h2>
+
+        <button class="buttoncords" onclick="getLocation()" onmouseover="changes()" onmouseout="changeback()" ><b>Try It</b></button>
+
+        <p id="demo"></p>
+    </div>
+    <div class="jigsaw">
+        <h2 style="width: 100%;">Solve the image jigsaw puzzle</h2>
+        <div class="images" style="width: 10%;">
+            <img src="./1.jpg" alt="img 1" height="103px" width="103px" draggable="true" id="img1" ondragstart="drag(event)">
+            <img src="./2.jpg" alt="img 2" height="103px" width="103px" draggable="true" id="img2" ondragstart="drag(event)">
+        </div>
+
+        <table style="border-width: 0px;">
+            <tr style="border-width: 0px;">
+                <td class="abcd" ondragover="allowDrop(event)" ondrop="drop(event)" ></td>
+                <td class="abcd" ondragover="allowDrop(event)" ondrop="drop(event)" ></td>
+            </tr>
+            <tr style="border-width: 0px;">
+                <td class="abcd" ondragover="allowDrop(event)" ondrop="drop(event)" ></td>
+                <td class="abcd" ondragover="allowDrop(event)" ondrop="drop(event)" ></td>
+            </tr>
+        </table>
+        
+        <div class="images" style="width: 10%;">
+            <img src="./3.jpg" alt="img 3" height="103px" width="103px" draggable="true" id="img3" ondragstart="drag(event)">
+            <img src="./4.jpg" alt="img 4" height="103px" width="103px" draggable="true" id="img4" ondragstart="drag(event)">
+        </div>
+    </div>
+    <div class="carousal">
+        <h2 style="margin: 30px; font-family: 'Times New Roman', Times, serif;">My carousal</h2>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img class="caromages" src="./carousal images/05392e9b8f1c2a28b3cd2f1101110da6.png" style="width:100%">
+              <div class="text">Sunset beach</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img class="caromages" src="./carousal images/1013376.jpg" style="width:100%">
+              <div class="text">Mountains around lake</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img class="caromages" src="./carousal images/anime-horizon-night-sky-wallpaper-2000x1333_39.jpg" style="width:100%">
+              <div class="text">A story beneath the moonlit night</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img class="caromages" src="./carousal images/girl-watching-shooting-star-alone-wallpaper-1920x1200_6.jpg" style="width:100%">
+                <div class="text">The girl under the sky</div>
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img class="caromages" src="./carousal images/thumb-1920-737385.jpg" style="width:100%">
+                <div class="text">Your name</div>
+              </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+    </div>
+    <script>
+      let mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the
+        document
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+        function expand(){
+          document.getElementById("menubar").style.backgroundColor="transparent";
+          document.getElementById("menubar").style.width="100px";
+          document.getElementById("home").style.color="black";
+          
+          
+          document.getElementById("feedback").style.color="Black";
+          document.getElementById("hobbies").style.color="black";
+          document.getElementById("puzzle").style.color="black";
+
+          setTimeout(buttonappear ,500);
+
+          
+
+          setTimeout(names,500);
+          
+          setTimeout(check,501);
+          
+          
+      }
+
+      function check(){
+        if(document.getElementById("home").style.color != "black"){
+          contract();
+        }
+      }
+
+      function buttonappear(){
+        let x=document.getElementsByClassName("button");
+          for(let i=0;i<x.length;i++){
+            x[i].style.display="block";
+          }
+      }
+
+      function names(){
+          document.getElementById("home").innerHTML="<b>Home</b>";
+          document.getElementById("feedback").innerHTML="<b>Feedback</b>";
+          document.getElementById("hobbies").innerHTML="<b>Hobbies</b>";
+          document.getElementById("puzzle").innerHTML="<b>Puzzle</b>";
+      }
+
+      function contract(){
+          document.getElementById("menubar").style.backgroundColor="transparent";
+          document.getElementById("menubar").style.width="20px";
+          document.getElementById("home").style.color="#11ffee";
+          document.getElementById("home").innerHTML="";
+          document.getElementById("feedback").style.color="#11ffee";
+          document.getElementById("feedback").innerHTML="";
+          document.getElementById("hobbies").style.color="#11ffee";
+          document.getElementById("hobbies").innerHTML="";
+          document.getElementById("puzzle").style.color="#11ffee";
+          document.getElementById("puzzle").innerHTML="";
+          let x=document.getElementsByClassName("button");
+          for(let i=0;i<x.length;i++){
+            x[i].style.display="none";
+          }
+      }
+
+    var x = document.getElementById("demo");
+
+    function leave(ev){
+        ev.target.style.borderStyle="solid";
+    }
+
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("img", ev.target.id);
+        ev.target.style.borderStyle="solid";
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("img");
+        ev.target.appendChild(document.getElementById(data));
+        ev.target.style.borderStyle="hidden";
+    }
+
+    function changes(){
+        
+        x.style.backgroundColor="cyan";
+        x.style.borderLeftStyle="solid";
+        x.style.borderLeftcolor="blue";
+        x.style.borderLeftWidth="10px";
+        x.innerHTML="<b>coordinates will be shown here<br></b> ";
+    }
+
+    function changeback(){
+        x.style.backgroundColor="transparent";
+        x.style.borderLeftStyle="none";
+        // x.style.borderLeftcolor="";
+        // x.style.borderLeftWidth="800%";
+        x.innerHTML="";
+        
+    }
+
+    function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+        
+    } else { 
+        x.innerHTML = "<b>Geolocation is not supported by this browser.</b>";
+    }
+    }
+
+    function showPosition(position) {
+        x.style.backgroundColor="cyan";
+        x.style.borderLeftStyle="solid";
+        x.style.borderLeftcolor="blue";
+        x.style.borderLeftWidth="800%";
+        x.innerHTML = "<b>Latitude: " + position.coords.latitude + "<br>  Longitude: " + position.coords.longitude + "</b>";
+    }
+
+    function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+        x.innerHTML = "User denied the request for Geolocation."
+        break;
+        case error.POSITION_UNAVAILABLE:
+        x.innerHTML = "Location information is unavailable."
+        break;
+        case error.TIMEOUT:
+        x.innerHTML = "The request to get user location timed out."
+        break;
+        case error.UNKNOWN_ERROR:
+        x.innerHTML = "An unknown error occurred."
+        break;
+    }
+    }
+    </script>
+
+    </body>
+</html>
+
+
+
+
+
+
+

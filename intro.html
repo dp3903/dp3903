@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lobster">
+        <style>
+            html{
+        scroll-behavior: smooth;
+      }
+            .row-2{
+                display: flex;
+                flex-direction: row ;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .row-2 div{
+                box-sizing: border-box;
+                display: inline;
+                width: 25%;
+                min-width: 300px;
+                height: max-content;
+                min-height: fit-content;
+            }
+            .icons{
+                transition: all 0.5s;
+            }
+            .icons:hover{
+                transform:  scale(1.2);
+            }
+            .myimage:hover{
+                transform: scale(1.7);
+            }
+            .skilltitle{
+                text-align: center;
+                border-top: solid grey;
+                text-decoration: underline;
+                padding-top: 40px;
+            }
+            .skills{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: space-around;
+
+            }
+            .skilltype{
+                box-sizing: border-box;
+                margin: 40px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px grey;
+                width: 30%;
+                min-width: 300px;
+                padding: 10px;
+                transition: all 1s;
+            }
+            .skilltype:hover{
+                transform: scale(1.3);
+                background-color: #ababab;
+            }
+            button:hover{
+                transform: scale(1.2);
+            }
+            #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #999999;
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+            
+            transition: all 0.5s;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            transform: scale(1.2);
+        } 
+            </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
+        <table>
+            <tr>
+                <div style="background-color: whitesmoke; padding: 8px; border-radius: 10px; box-shadow: 4px 4px 16px #0E0E0E; margin: 10px;">
+                    
+                    <h1 style="text-align: center; font-family: 'Bebas Neue', sans-serif; text-shadow: 3px 3px 3px #ababab;">My Introduction</h1>
+                    
+                        <div style="border-top: solid;   border-width: 4px; border-color: #E0E0E0;">
+                            <br>
+                            
+                        <button id="home" onmouseover="over(1)" onmouseout="out(1)" onclick="location.href='intro.html';" style="border-radius: 6px; height: 40px; font-family: 'Times New Roman', Times, serif; border-width: 0px; background-color: #cccccc; box-shadow: 2px 2px 4px grey; transition: all 0.3s;"><b>Home</b></button>
+                        <button id="feedback" onmouseover="over(2)" onmouseout="out(2)" onclick="location.href='index2.1.html';" style="border-radius: 6px; height: 40px; font-family: 'Times New Roman', Times, serif; border-width: 0px;  box-shadow: 2px 2px 4px grey; transition: all 0.3s;"><b>Feedback</b></button>
+                        <button id="hobbies" onmouseover="over(3)" onmouseout="out(3)" onclick="location.href='hobbies.html';" style="border-radius: 6px;  box-shadow: 2px 2px 4px grey; height: 40px; font-family: 'Times New Roman', Times, serif; border-width: 0px; transition: all 0.3s;"><b>Hobbies</b></button>
+                        <button id="puzzle" onmouseover="over(4)" onmouseout="out(4)" onclick="location.href='hwass4.html';" style="border-radius: 6px;  box-shadow: 2px 2px 4px grey; height: 40px; font-family: 'Times New Roman', Times, serif; border-width: 0px; transition: all 0.3s;"><b>Puzzle</b></button>
+                        <p style="text-align: right;">
+                        <a style="text-align: end; color: black;" href="intro2.html">Light|Dark</a>
+                        </p>
+                        </div>
+                        
+                </div>
+            </tr>
+            <tr class="row-2">
+                
+                    <div style="background-color: whitesmoke; padding: 8px; border-radius: 10px; box-shadow: 4px 4px 16px #0E0E0E; margin: 10px;">
+                        <center>
+                        Profile<br>
+                        <img class="myimage" src="./IMG-20230430-WA0003.jpg" alt="my image" style="height: 230px; width: 230px;transition: all 0.5s; padding: 1px; border-radius: 20px; align-self: center; box-shadow: 5px 5px 10px #1f1f1f;">
+                        <br><br>
+                        
+                            <b>Name: Dhruv R Patel<br><br>
+                            Current occupation: Student at DDIT university Nadiad<br><br>
+                            Branch: Computer Engineering(CE)<br><br>
+                            Age: 19<br><br>
+                            BirthDate: September 4, 2003</b>
+
+                        </center>
+                        
+                    </div>
+                
+                    <div class="center" style="background-color: whitesmoke; padding: 8px; border-radius: 10px; box-shadow: 4px 4px 16px #0E0E0E; margin: 10px; font-family: 'Lobster', serif;">
+                        <h3 style="text-align: center;">The following are some details and facts about me and this website</h3>
+                        <p style="text-align:start; padding: 50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This website was created completely by me and me alone, without any assistance from any facaulty or a fellow student
+                        . As were all the different webpages linked together with this website. This is the Home page and there are 3 more pages that you can jump to from this page as
+                        displayed in the box above with 4 buttons one for each page including this one (it will refresh this page if you press Home button). This website is completely responsive with all its pages being completely self adjusting as per device.</p>
+                        <p style="text-align:start; padding: 50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a student at DDIT university Nadiad. My home town is rajkot. I am a computer student currently in 2nd sem with 2* at codechef since 
+                            1st sem 2nd sessional. I plan on being a AI engineer and quantum computer scientist in future.</p>
+                        <h2 class="skilltitle">My skills</h2>
+                        <div class="skills">
+                            
+                            <div class="skilltype softskills">
+                                <h2 style="text-align: center; text-decoration: underline;">Soft skills</h2>
+                                <ul>
+                                    <li>Communication</li>
+                                    <li>Confidence</li>
+                                    <li>Creativity</li>
+                                    <li>Adaptability</li>
+                                    <li>Decision Making</li>
+                                </ul>
+                            </div>
+                            <div class="skilltype hardskills">
+                                <h2 style="text-align: center; text-decoration: underline;">Hard skills</h2>
+                                <ul>
+                                    <li>Mathematics</li>
+                                    <li>Mastered Languages C, C++, HTML, CSS, Javascript, PHP, SQL</li>
+                                    <li>Data Analysis</li>
+                                    <li>Deep understanding and knowledge of machine operating systems</li>
+                                    <li>Deep knowledge of Hardwares and Softwares</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div style="background-color: whitesmoke; padding: 8px; border-radius: 10px; box-shadow: 4px 4px 16px #0E0E0E; margin: 10px;">
+                        
+                        <center>
+                        <h3>Follow me on</h3>
+                        <a href="https://www.linkedin.com/in/dhruv-patel-671774252"><img class="icons" src="./linkedin.png" alt="linkedin" style="height: 50px; width: 50px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img class="icons" src="./github-mark.png" alt="instagram" style="height: 50px; width: 50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img class="icons" src="./gmail.png" alt="Gmail" style="height: 50px; width: 50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img class="icons" src="./facebook.png" alt="facebook" style="height: 50px; width: 50px;">
+                    </center>
+                    </div>
+                
+            </tr>
+        </table>
+        <script>
+            let mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the
+        document
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+            
+
+            function over(n){
+                if(n==1){
+                    let x=document.getElementById("home")
+                    x.style.backgroundColor="#BBBBBB";
+                    
+                }
+
+                if(n==2){
+                    let x=document.getElementById("feedback")
+                    x.style.backgroundColor="#BBBBBB";
+                }
+
+                if(n==3){
+                    let x=document.getElementById("hobbies")
+                    x.style.backgroundColor="#BBBBBB";
+                }
+
+                if(n==4){
+                    let x=document.getElementById("puzzle")
+                    x.style.backgroundColor="#BBBBBB";
+                }
+            }
+
+            function out(n){
+                if(n==1){
+                    let x=document.getElementById("home")
+                    x.style.backgroundColor="#cccccc";
+                }
+
+                if(n==2){
+                    let x=document.getElementById("feedback")
+                    x.style.backgroundColor="#EEEEEE";
+                }
+
+                if(n==3){
+                    let x=document.getElementById("hobbies")
+                    x.style.backgroundColor="#EEEEEE";
+                }
+
+                if(n==4){
+                    let x=document.getElementById("puzzle")
+                    x.style.backgroundColor="#EEEEEE";
+                }
+            }
+
+            
+        </script>
+    
+    </body>
+</html>
