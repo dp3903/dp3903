@@ -1,22 +1,57 @@
+<h1 align="center">Hi 👋, I'm Dhruv R Patel</h1>
+<h3 align="center">A passionate full-stack developer from India.</h3>
 
-<!-- uncomment this to upload image on profile
-![IMG-20230430-WA0003](https://github.com/dp3903/dp3903/assets/122767649/8d5c5d48-708f-4e39-808f-32d8bf670c3a)
--->
-### Hi there 👋
+---
 
-<!--
-**dp3903/dp3903** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.![IMG-20230430-WA0003](https://github.com/dp3903/dp3903/assets/122767649/c57d089f-9743-437b-a85d-72c80d4feac8)
+<p align="center">
+  <strong>🌱 Currently Learning:</strong> <br />
+  NextJS, FastAPI, Machine Learning
+</p>
+
+<p align="center">
+  <strong>📫 Reach me at:</strong> <br />
+  <a href="mailto:dp3903@gmail.com">dp3903@gmail.com</a>
+</p>
+
+---
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+  <a href="https://linkedin.com/in/dhruv-patel" target="_blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
+  </a>
+  <a href="https://www.leetcode.com/dp3903" target="_blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="LeetCode" height="30" width="40" />
+  </a>
+  <a href="https://auth.geeksforgeeks.org/user/dp3903" target="_blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="GeeksforGeeks" height="30" width="40" />
+  </a>
+</p>
+
+---
+
+<table>
+  <tr>
+    <td><img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="65" height="65" /></td>
+    <td><img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="65" height="65" /></td>
+    <td><img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="C#" width="65" height="65" /></td>
+    <td><img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" /></td>
+    <td><img src="https://techstack-generator.vercel.app/django-icon.svg" alt="Django" width="65" height="65" /></td>
+    <td><img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" /></td>
+    <td><img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="65" height="65" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="65" height="65" /></td>
+    <td><img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="REST API" width="65" height="65" /></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...![IMG-20230430-WA0003](https://github.com/dp3903/dp3903/assets/122767649/0f50520a-788e-4809-9cd5-b13e0142f313)
-
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">Thanks for visiting my profile! 🌟</p>
