@@ -33,7 +33,7 @@ function Skills() {
             <Marquee pauseOnHover className="[--duration:20s]">
                 {techStack.map((item) => (
                     <div key={item.name} className='h-30 w-30 flex flex-col items-center justify-between p-2 mx-4'>
-                        <img className='relative' src={"src/assets/" + item.src} alt={item.name} height="40" width="40"></img>
+                        <img className='relative' src={"/assets/" + item.src} alt={item.name} height="40" width="40"></img>
                         <span className='relative bottom-0'>{item.name}</span>
                     </div>
                 ))}
