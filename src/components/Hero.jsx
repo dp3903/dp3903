@@ -40,17 +40,17 @@ const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "#",
+        url: "https://github.com/dp3903",
         icon: Icons.github,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "#",
+        url: "https://www.linkedin.com/in/dhruv-patel-671774252",
         icon: Icons.linkedin,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "https://mail.google.com/mail/?view=cm&fs=1&to=dp3903@gmail.com",
         icon: Icons.email,
       },
     },
@@ -61,7 +61,7 @@ const DATA = {
 function Hero() {
 
   return (
-    <div className='h-[90vh] pt-40 flex flex-wrap flex-row justify-evenly'>
+    <div className='sm:p-40 flex flex-wrap flex-row justify-evenly '>
         {/* <DotPattern
             width={20}
             height={20}
@@ -74,10 +74,10 @@ function Hero() {
             )}
         /> */}
         
-        <div className='w-min'>
-            <h1 className='text-7xl w-max bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>Hi Everyone</h1>
+        <div className='w-min p-10 flex flex-col gap-6 basis-full sm:basis-1/2 items-center sm:items-start'>
+            <h1 className='text-7xl w-max h-24 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>Hi Everyone</h1>
 
-            <div className='mt-6 text-xl text-left'>
+            <div className='text-xl text-left'>
                 My name is <span className='text-fuchsia-400 text-4xl'>Dhruv</span> and I am a 
                     <WordRotate
                         className="text-2xl font-bold bg-gradient-to-r from-cyan-500 to-fuchsia-500 text-transparent bg-clip-text"
@@ -87,7 +87,7 @@ function Hero() {
 
             <ShineBorder
                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-                className="m-auto sm:m-0 sm:mt-6"
+                className="m-auto sm:m-0"
                 borderRadius={50}
             >
                 <TooltipProvider>
@@ -118,9 +118,9 @@ function Hero() {
                 </TooltipProvider>
             </ShineBorder>
         </div>
-        <div className='h-min min-w-fit mt-5'>
-            <NeonGradientCard className="max-w-sm p-0 items-center justify-center text-center">
-                <img className='rounded-2xl' src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAtAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQIDBAYHBQj/xAA9EAABAwIEBAIIAwQLAAAAAAABAAIDBBEFEiExBkFRcSJhBxMyUoGRobEUI0IVM3KyNUNTYnSSosLR8PH/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIFAwQG/8QAIREBAAICAwACAwEAAAAAAAAAAAECAxEEEiETMUFRYSL/2gAMAwEAAhEDEQA/AOboiLo5CIiAiIgInmgIKAqXPa3cqzJLm0Gg+6tqvZfqvOmP6dlS2VwO6too3KdQyWytd5d1UCDsQeyxEGmybR1ZmvNFYikN8pt3JV/srQrMCIilAiIgIiICIiAiIgIiICIiCib92SFRO6wDBzVyQgMN+ixrk2J3CrK0QhEUqq6ERhzvyRgvedmsFyfgFXLFLCzPPDLE3bNLGWD5kJtOlCIiINjfmr8Ly64O6sKuHSQKYRLJREV3MREQEREBERAREQEREBERBaqPZaPNWFfnHhCsKll6i23g3gubHgK2te6DDgfCW+3N/D0Hn8l5fCOC/t3HIqSW4p2j1kxG+QcvjoF3KNjI2NjjaGMaAGtaLAAbBebPk6+Q9/E48ZP9W+ljDcPpMMpmwUFOynjHJg38yeZWS7xAtf4muFiHagjopReOZn7asViI1py/jvhhtPQCto2Afgfy5m8zCf3b/hq09beS0HrdfQlbDE5ueVodG5pjma4aOYd79t/muH8S4M/AcYmw9xLo2+KF53cw7X8+XwXswZO3jK5eHpPaPp5aqi9sd1Sq4ReQL0w8M/TJREV3MREQEREBERAREQEREBERBRMLxuWNost1spuQBzJXucFYHh2KfjqnGpxDRUrWA/m5MznXtr0AHxuqXnXsuuKk3nUNs9FGEmlwyoxKVtn1jg2Me7G2/wByT8gt7XkYVitBUU7IcGinqaeFoYx1PA4xgDS2bQXWcamdur8OrQ3qGA/YrNvFrW3pt4rUx0iu2SiwY8WoHz/hzUsiqLX9TN+W+38LrHkrtXX0dFF6ysqoIGe9LIG/dU1Lt3r+2StS484ZlxzD6d1C1prKU2ZmdbMw7gnysD/6tiZXCYXpqSsmbyc2AtB/zWUSVkkLC+XD64NHuQ5z8mklXrFqzuHPJOO8TWZcLxjBsQwWWOLEqYwukBLDcEPta9rdwsenG/yXRPSJiOF41w/HJQVkU01LUAmMGzwDdpBadeYv2XPIHMMfgcDbU2N7L34rTaNyxuRStLar7C6iIuzzCIiAiIgIiICIiAiIgIiIN/8ARphkD6WqxCeJkkjpPVRZgDlAFyR0uT9ApxzhKhxXiHEI4oxBUuw8T0nq/C0SZiCSBvfwrF9GWKCGpqMMlItMRLD/ABAWcPkBbsVtmIk0/E+CVJ0bKJ6Vw6lwD2/yOXgvNoyz62MNaX49fGx8NiAcP4aKRuWEUseQWt+kX+q9FeJQSzYa6WExOmpHPMkTo7Zo7m5aQdxfUEdbWWb+1IiQBBU3PWNV3/Vukx5p4/H+F02M4TTUNQwF8tXG2JxGrNbvt55Q5eNhnCWD4JxbhdZRUjWRvZLFlcc2WWwLCL87B/0WzyNfUVbamewLAWxR8mA7m/Mm3/HNRUQtnjylzm2cHNe3drgbghROT1f4ImJmY9eypv72o53XnMxF0bQ2pheX7F0LLtPn5KJcUOQ/haSaST9Il8DPienYE+Sne/yrNZ/Tm/H3DkFfjOKV9yy81LTNyc5XkNe49g5q9vjmhpp+G6iR0bQ6lbngNtW2sLA9LaLMxajfHhdLDNJ62Z9fDLLJltnf6wOJtyGmg6WXi+kvERT4ZBQN9uqeSfJjbX+ZI+qmLTa9dImlceK+/wBOaoiLQYoiIgIiICIiAiIgIiICIiC5BNLTTx1FO/JLG4OY7oR/37rsmHT0XEFDR1wZmyPEoaHaxyAWI+pXF1lUGJV2GPMuHVD4nnUgO8LrbXHNccuL5I3H29XG5HxTMTG4l3hFYoqqKtpIKqnN4ZmB7OxV9ZjdidxsREUJERRdBiYo6kigbPXSsiiheH5nusLi9u/Zcf4oxc43i8lU0ObC0ZIWnfKOZ73JWz+latDpcPoGkEMDp5B5+y3/AH/RaF2WhxsWo7Sx+dn7W+OBERepniIiAiIgIiICIiAiIgIiICIiDpPovxN81JV4dNtTFr4nH3XXuPgR/qW8c1yX0dziLiERO2nhcw99CPsuosqcrsk242cs3kV1du8K3bDH8ZSKGkEXaQR1ClcHrFBIAJOw3UOcGAl+luqwaio9abN0Zf5pEeolyDiSulxDHq6ol0PrnRtHRrSWj7LzFfxD+kaz/Ey/zlWFr1jUQ+avO7TMiIisqIiICIiAiIgIiICKCbanZW3TgeyAfMqJlMQuqCQNyFjOkc7dxVN+qjsnqys7feCesZ7wWIhTsnq3L0f4ZNiGMsq4ZAyCicHPeRuSCA0fDVdSliErdBZw2K0D0WYtTtinwmRojne8zMcf63QAjuLfJdCFiFnci0zf1ucGlYw+MEZ2Gwu0jzVQnm/tSsmWJsg1Fj1WLJE6PcadVy29MwoLnO9ok9ynZPgilVo3F3CscMdXi9DUFmW8kkD23Dr7lpvp1tqtHFR/d+q6lxzVMpeG6lrz457RMb1J3+gXKLL3YLWmvrH5mOlb+L/r2+ara9rtj8CsSyDrou/Z5OrNRYmY8iVIe4bOPxTZ1ZSK2yVrh4jYq4piVdCIilAhIAudgix5n5ttgk+JiNqZJC86aBUKMx/ULKVzdE2SyFAgWUFSiCaaeWnlinheWTRODmPG7SOa7PwtxRR4/TsZmbFXhv5kBO55lvULimzrjYqsEhwcCQ5puHA2IPUHqueTFF49ejByLYZ8+n0MFK5hw56QaimLafGwaiDb8Q0fmM7j9XffuuhVWK0NLQGumqYxT5A8PBvmB2sPNeC2K1Z018XIpkrtkvhY7lbsrFSynpYXT1M4hiYLvkfoGjzWnYt6R6ZtMP2PTukmL7XqGlrQ229hv20WkY7xFiWO5fx8o9Sw3ELG5WA9bcz3XSmC8/bhl5uOsf59lVxPjbsbxIytuKaK7YGkWs3mT5nT6Lye6i9zflyUr3RWIjUMm9ptbch2KpZ7F1U7Yqn9NlKo03F0UAcgqwNECw6K9A7dpOisqWnK4HlzUwiY2y0S6K7molPhKxud0RVleoVSiKqwpbsFKICi6lEFLhoqm6i6Igc1TkbmzZRmva9tURSj8pVJ1OqIqwlWNlB02UopFJ2UO9pqlEFXNERAQ7IimBlM9kIiK7k//9k="></img>
+        <div className='lg:h-auto px-10 sm:p-0 sm:w-full flex justify-center items-center basis-full sm:basis-1/2 min-w-fit'>
+            <NeonGradientCard className="p-0 items-center justify-center text-center">
+                <img className='rounded-2xl h-full w-full' src="data:image/jpeg;base64,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"></img>
             </NeonGradientCard>
         </div>
     </div>

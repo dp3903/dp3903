@@ -4,6 +4,9 @@ export default {
     content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
   	extend: {
+		backgroundImage: {
+			'hero': 'url("/assets/bg-1.png")',
+		},
 		boxShadow: {
 			'custom': '0 0 20px rgb(192, 38, 211)',
 		},

@@ -20,20 +20,20 @@ function App() {
   });
 
   return (
-    <>
+    <div className=''>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <BlurFade delay={0.25} inView>
           <Hero/>
         </BlurFade>
 
-        <Separator className=' mb-40 border-2' />
+        <Separator className=' mb-40 border-0' />
 
         <BlurFade delay={0.25} inView>
           <h1 className='mb-10 text-4xl'>My Skills</h1>
           <Skills/>
         </BlurFade>
 
-        <Separator className='mt-40 mb-40 border-2' />
+        <Separator className='mt-40 mb-40 border-0' />
 
         <BlurFade delay={0.25} inView>
           <h1 className='mb-10 text-4xl'>Projects</h1>
@@ -41,7 +41,7 @@ function App() {
         </BlurFade>
 
       </ThemeProvider>
-    </>
+    </div>
   )
 }
 
